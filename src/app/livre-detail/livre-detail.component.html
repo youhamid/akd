@@ -1,0 +1,11 @@
+<button (click)="goBack()">Page Précédente</button>
+<div *ngIf="livre">
+    <h2> {{livre.nom || uppercase}} Details</h2>
+    <div><span>id: </span>{{livre.id}}</div>
+    <div>
+      <label>nom:
+        <input [(ngModel)]="livre.nom" placeholder="nom">
+      </label>
+    </div>
+    <button (click)="save()">Enregistrer</button>
+  </div>

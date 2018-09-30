@@ -1,0 +1,10 @@
+<h3>Top Livres</h3>
+<div class="grid grid-pad">
+  <a *ngFor="let livre of livres" class="col-1-4" routerLink="/detail/{{livre.id}}">
+    <div class="module livre">
+      <h4>{{livre.nom}}</h4>
+    </div>
+  </a>
+</div>
+
+<app-livre-search></app-livre-search>
